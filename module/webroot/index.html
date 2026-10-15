@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>ORBIT // STORE</title>
+<link rel="stylesheet" href="style.css">
+<style>
+.chip.src{background:#8fa2ff1f;color:var(--ac)}
+.seg{flex-wrap:wrap}
+.tags button small{opacity:.6;margin-left:4px}
+.lcard .row .ghost{padding:6px 12px}
+nav.bottom button{min-width:0;flex:1}
+#tab-lists a{color:inherit}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <div class="logo"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3.2"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(-28 12 12)"/></svg></div>
+    <div><div class="title">ORBIT <span>//</span> STORE</div><div class="sub" id="subline">Loading...</div></div>
+  </div>
+  <button class="pill" id="refresh">Refresh</button>
+</header>
+
+<main>
+  <section class="tab active" id="tab-browse">
+    <div class="search"><svg viewBox="0 0 24 24"><path d="m21 21-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"/></svg><input id="q" placeholder="Search modules, authors or tags" autocomplete="off"></div>
+    <div class="seg" id="sort"><button data-s="updated" class="on">Recent</button><button data-s="stars">Popular</button><button data-s="name">A-Z</button></div>
+    <div class="tags" id="tagbar"></div>
+    <div id="notice"></div>
+    <div id="list" class="list"></div>
+  </section>
+
+  <section class="tab" id="tab-lists">
+    <div class="search"><svg viewBox="0 0 24 24"><path d="m21 21-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z"/></svg><input id="lq" placeholder="Search apps and modules in the lists" autocomplete="off"></div>
+    <div id="listsBox"></div>
+  </section>
+
+  <section class="tab" id="tab-installed">
+    <div class="toolbar"><span class="hint" id="updHint"></span><button class="ghost" id="updAll">Update all</button></div>
+    <div id="instList" class="list"></div>
+  </section>
+
+  <section class="tab" id="tab-mine">
+    <p class="hint">Modules by the featured author. Change the author in Settings.</p>
+    <div id="mineList" class="list"></div>
+  </section>
+
+  <section class="tab" id="tab-settings">
+    <div id="settingsBox"></div>
+  </section>
+</main>
+
+<nav class="bottom">
+  <button data-tab="browse" class="on"><svg viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg>Browse</button>
+  <button data-tab="lists"><svg viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg>Lists</button>
+  <button data-tab="installed"><svg viewBox="0 0 24 24"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>Installed<i class="badge" id="updBadge"></i></button>
+  <button data-tab="mine"><svg viewBox="0 0 24 24"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1L3.2 9.5l6.1-.9L12 3Z"/></svg>Featured</button>
+  <button data-tab="settings"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/><circle cx="9" cy="6" r="2"/><circle cx="15" cy="12" r="2"/><circle cx="8" cy="18" r="2"/></svg>Settings</button>
+</nav>
+
+<div class="sheet-bg" id="sheetBg"><div class="sheet" id="sheet"></div></div>
+<div class="toast" id="toast"></div>
+<script src="sources.js"></script>
+<script src="app.js"></script>
+<script src="support.js"></script>
+</body>
+</html>

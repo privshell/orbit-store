@@ -1,0 +1,6 @@
+id=orbit_store
+name=ORBIT // STORE
+version=v1.1.0
+versionCode=110
+author=kreza6173-pixel
+description=In-manager module store. KernelSU Modules, KernelSU Next and Magisk Alt Repo catalogs in one place, plus curated root app and module lists by category. sha256 verified whenever the source publishes one.
