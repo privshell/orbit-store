@@ -65,7 +65,7 @@ No catalog or list audits module code. Install only modules you trust.
 `node tests/sources.test.js` runs the parser tests for the extra catalogs and lists.
 
 ## Support
-ORBIT is free and open source, built in spare time. If it saved you time, you can [support the work with a small crypto donation](https://github.com/kreza6173-pixel/kreza6173-pixel/blob/main/DONATE.md) (USDT on TRC20, or USDC / SOL on Solana). Starring the repo or opening a clear issue helps just as much.
+ORBIT is free and open source, built in spare time. If it saved you time, you can [support the work with a small crypto donation](https://github.com/privshell/privshell/blob/main/DONATE.md) (USDT on TRC20, or USDC / SOL on Solana). Starring the repo or opening a clear issue helps just as much.
 
 ## License
 MIT

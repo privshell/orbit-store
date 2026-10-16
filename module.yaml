@@ -5,14 +5,14 @@ name: ORBIT // STORE
 summary: A module store inside your root manager. KernelSU Modules, KernelSU Next and Magisk Alt Repo catalogs in one place, plus curated root app and module lists by category. sha256 verification, update badges and metamodule conflict warnings.
 description: README.md
 license: MIT
-homepage: https://github.com/kreza6173-pixel/orbit-store
-support: https://github.com/kreza6173-pixel/orbit-store/issues
+homepage: https://github.com/privshell/orbit-store
+support: https://github.com/privshell/orbit-store/issues
 tags: [store, repository, tools, webui, updates, catalog]
 metamodule: false
 
 authors:
-  - name: kreza6173-pixel
-    url: https://github.com/kreza6173-pixel
+  - name: privshell
+    url: https://github.com/privshell
 
 compatibility:
   androidMinApi: 28

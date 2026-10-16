@@ -33,7 +33,7 @@ const q = s => `'${String(s).replace(/'/g, '')}'`;
 
 /* ---------- settings (local) ---------- */
 const PREF = {
-  get author() { return localStorage.getItem('orbit.author') || 'kreza6173-pixel'; },
+  get author() { return localStorage.getItem('orbit.author') || 'privshell'; },
   set author(v) { localStorage.setItem('orbit.author', v); },
   get pre() { return localStorage.getItem('orbit.pre') === '1'; },
   set pre(v) { localStorage.setItem('orbit.pre', v ? '1' : '0'); },
@@ -506,7 +506,7 @@ function renderSettings() {
     <span>Installer</span><span>${esc(t.installer || 'unknown')}</span><span>curl</span><span>${yn(t.curl)}</span><span>busybox wget</span><span>${yn(t.wget)}</span>
     <span>WebView fallback</span><span>${yn(true)}</span><span>Android API</span><span>${esc(t.sdk || '-')}</span><span>ABI</span><span>${esc(t.abis || t.abi || '-')}</span><span>Device</span><span>${esc(t.device || '-')}</span></div>
     <div class="toolbar" style="margin-top:12px"><button class="ghost" id="rb" style="flex:1">Reboot</button></div></div>
-  <div class="box"><h3>About</h3><div class="kv"><span>Version</span><span>v1.1.0</span><span>Author</span><span>kreza6173-pixel</span><span>Checks</span><span>sha256 is verified whenever the source publishes one; unverified installs always ask first</span></div></div>`;
+  <div class="box"><h3>About</h3><div class="kv"><span>Version</span><span>v1.1.0</span><span>Author</span><span>privshell</span><span>Checks</span><span>sha256 is verified whenever the source publishes one; unverified installs always ask first</span></div></div>`;
   const b = $('#settingsBox');
   $('#srcSave', b).onclick = async () => {
     const lines = $('#srcs', b).value.split('\n').map(s => s.trim()).filter(Boolean);
